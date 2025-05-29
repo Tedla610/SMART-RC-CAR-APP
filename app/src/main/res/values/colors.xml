@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="holo_orange_light">#FFFFBB33</color>
+    <color name="holo_green_light">#FF99CC00</color>
+    <color name="holo_red_light">#FFFF4444</color>
+</resources>

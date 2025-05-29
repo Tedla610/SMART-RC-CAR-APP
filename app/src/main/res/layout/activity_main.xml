@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Disconnected"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect to HC-06" />
+    </LinearLayout>
+
+    <!-- Temperature Data Display -->
+    <TextView
+        android:id="@+id/sensorDataText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="T: --°C"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/speedLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speed: 1500 (Neutral)"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/speedSlider"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:max="100"
+        android:progress="50"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/steerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Steering: 1500 (Center)"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/steerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:max="100"
+        android:progress="50"
+        android:padding="8dp" />
+
+</LinearLayout>
